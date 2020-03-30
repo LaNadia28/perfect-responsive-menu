@@ -1,11 +1,15 @@
 const toggleMenu = document.querySelector('.navigation button');
 const menu = document.querySelector('.navigation ul');
-const contacts = document.createElement('li'); // Ctéation d'un élément li
+const contact = document.createElement('li'); // Ctéation d'un élément li
 
-contacts.id = 'contacts'; // Définition de son identifiant
-contacts.textContent = 'Contacts'; // Définition de son contenue textuel
+contact.id = 'contact'; // Définition de son identifiant
+contact.textContent = 'Contact'; // Définition de son contenue textuel
 
-document.getElementById('menu').appendChild(contacts); //Insertion du nouvel élément
+document.getElementById('menu').appendChild(contact); //Insertion du nouvel élément
+contacts.addEventListener('click', function(){
+	console.log("click");
+});
+
 
 toggleMenu.addEventListener('click', function() {
 	const open = JSON.parse(toggleMenu.getAttribute('aria-expanded'));
