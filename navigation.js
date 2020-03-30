@@ -1,6 +1,6 @@
 const toggleMenu = document.querySelector('.navigation button');
 const menu = document.querySelector('.navigation ul');
-const contacts = document.scrollingElement('li'); // Ctéation d'un élément li
+const contacts = document.createElement('li'); // Ctéation d'un élément li
 
 contacts.id = 'contacts'; // Définition de son identifiant
 contacts.textContent = 'Contacts'; // Définition de son contenue textuel
